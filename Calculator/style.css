@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  background: linear-gradient(60deg, #0a0a0a, #3a4452);
+}
+.outer {
+  height: 65%;
+  width: 30vw;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.inputVal {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+  border-radius: 15px;
+}
+.result {
+  height: 40%;
+  line-height: 7vmin;
+  text-align: end;
+  padding-right: 10px;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-indent: 10px;
+  margin: 0 10px 0 0;
+  color: grey;
+}
+.inputVal input {
+  height: 60%;
+  text-align: end;
+  padding: 20px 10px 10px 40px;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 25px;
+  text-indent: 10px;
+  margin: 0 10px 0 0;
+}
+
+.valuediv {
+  height: auto;
+  margin-top: 10px;
+  border-radius: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.value {
+  display: flex;
+  justify-content: space-evenly;
+}
+.valuediv button {
+  height: 8vmin;
+  width: 8vmin;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: none;
+  border: none;
+  box-shadow: -1px -1px 5px #ffffff5e;
+}
+.symbol {
+  color: #f3752b;
+}
