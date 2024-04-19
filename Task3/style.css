@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  border: 2px solid orange;
   align-content: center;
   align-items: center;
   height: 100vh;
@@ -30,6 +29,6 @@ button {
 button:hover {
   border: 1px solid black;
 }
-button:active{
+button:active {
   font-size: 4.5vmin;
 }
