@@ -12,6 +12,7 @@ body {
 .imag-sec {
   height: 59vh;
   width: 40vw;
+  display: block;
   margin-left: 25%;
   background-image: url(image1.jpg);
   background-position: center;
@@ -23,6 +24,7 @@ button {
   margin-left: 25%;
   font-size: 4vmin;
   border: none;
+  display: block;
   background: linear-gradient(90deg, #ed1c24, #f1d302);
   color: white;
 }
