@@ -88,8 +88,8 @@ section {
   font-size: 2vw;
 }
 @media (max-width: 770px) {
-  main{
-   margin-top: 10vh;
+  main {
+    margin-top: 10vh;
   }
   .quotes {
     width: 45vw;
@@ -116,37 +116,39 @@ section {
     width: 25vw;
     font-size: 2vw;
   }
-  .book-now:active{
+  .book-now:active {
     font-size: 2.2vw;
   }
 }
 @media (max-width: 430px) {
+  * {
+    border: 2px solid grey;
+  }
   main {
     flex-direction: column;
     margin-top: 0;
   }
   .hero-img {
     background-size: contain;
-    width:100%;
+    width: 100%;
     height: 50vh;
     background-position: right;
   }
   .quotes {
     width: 100%;
     height: 40vh;
-
   }
   .qoute-1 {
-    width: 60vw;
+    width: 65vw;
     font-size: 7vw;
     margin-top: 10%;
   }
   .quote-2 {
-    width: 60vw;
+    width: 65vw;
     font-size: 7vw;
   }
   .quote-3 {
-    width: 60vw;
+    width: 65vw;
     font-size: 3.1vw;
   }
   .book-now {
