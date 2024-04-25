@@ -63,6 +63,7 @@ section {
   height: 100%;
 }
 .hero-img {
+  height: 85%;
   background-image: url(heroimg.png);
   background-size: contain;
   background-position: top;
@@ -103,7 +104,7 @@ section {
 }
 @media (max-width: 770px) {
   section {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   nav a {
     font-size: 2vw;
@@ -114,10 +115,10 @@ section {
 
   .quotes {
     width: 50vw;
-    height: 65vh;
+    height: 40vh;
   }
   .hero-img {
-    height: 65vh;
+    height: 40vh;
     width: 50vw;
   }
   .qoute-1,
@@ -134,7 +135,7 @@ section {
   }
   .book-now {
     margin-left: 30%;
-    height: 8vh;
+    height: 7vh;
     width: 25vw;
     font-size: 2vw;
   }
@@ -143,20 +144,20 @@ section {
   }
 }
 @media (max-width: 430px) {
-  section{
+  section {
     margin-top: 0;
   }
-  .side-link{
+  .side-link {
     font-size: 4vw;
     margin-top: 10%;
     width: 100%;
   }
- 
-  nav a:first-child{
+
+  nav a:first-child {
     width: 30vw;
     font-size: 3.5vw;
   }
- .username{
+  .username {
     font-size: 3.5vw;
     width: 15vw;
   }
@@ -165,43 +166,36 @@ section {
     margin-top: 0;
   }
   .hero-img {
-    background-size: contain;
     width: 100%;
-    height: 40vh;
-    background-position: center;
+    height: 55vh;
+    background-position: top;
+    margin-top: 0;
   }
   .quotes {
     width: 100%;
-    height: 60vh;
+    height: 45vh;
     align-content: center;
-
   }
   .qoute-1 {
     width: 70vw;
     font-size: 7.06vw;
     margin-left: 10%;
-
   }
   .quote-2 {
-
     width: 70vw;
     font-size: 7vw;
     margin-left: 10%;
-
   }
   .quote-3 {
-
     width: 70vw;
     font-size: 3.1vw;
     margin-left: 10%;
-
   }
   .book-now {
-    height: 8vh;
+    height: 6vh;
     width: 40vw;
     font-size: 3.5vw;
     margin-left: 20%;
-
   }
   .book-now:active {
     font-size: 3.6vw;
