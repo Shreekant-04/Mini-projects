@@ -1,84 +1,97 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   height: 100vh;
-  width: 100vw;
 }
 nav {
-  height: 8vmin;
-  background-color: #ffffff00;
-  backdrop-filter: blur(5px);
-}
-nav ul {
-  height: 7vmin;
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.151);
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  gap: 20px;
-  color: grey;
+  font-size: 1.2vw;
 }
-nav li {
-  cursor: pointer;
-  font-size: 2vw;
-  padding: 5px;
-  line-height: 5vmin;
+.sidebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.logo {
-  height: 100%;
-  width: 10vmin;
-  background-image: url(logo.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+
+nav a {
+  height: 8vh;
+  width: 8vw;
+  line-height: 8vh;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
 }
-.nav-link li:first-child {
+nav a:first-child {
+  width: 16vw;
   margin-right: auto;
+  font-weight: 700;
+  font-style: oblique;
+  font-size: 1.2vw;
+  font-family: cursive;
 }
-.nav-link li:last-child {
+.username {
   margin-left: auto;
-  color: rgba(0, 89, 255);
-  font-weight: lighter;
+  color: rgb(0, 110, 255);
+}
+
+a:hover {
+  background-color: rgba(0, 0, 255, 0.527);
+}
+.menu-button,
+.close-button {
+  display: none;
+}
+#side-check {
+  display: none;
 }
 main {
   display: flex;
+  height: 90vh;
 }
 section {
   width: 50vw;
+  height: 100%;
 }
 .hero-img {
   background-image: url(heroimg.png);
   background-size: contain;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .qoute-1 {
-  width: 40vw;
-  font-size: 5vw;
+  width: 38vw;
+  font-size: 4vw;
   margin-left: 18%;
-  margin-top: 20vmin;
+  margin-top: 15vmin;
 }
 .quote-2 {
   width: 40vw;
-
-  font-size: 5vw;
+  font-size: 4vw;
   margin-left: 18%;
   color: rgba(0, 132, 255, 0.925);
 }
 .quote-3 {
   margin-left: 18%;
   width: 40vw;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
 }
 .book-now {
   background-color: rgba(0, 132, 255, 0.925);
   color: #fff;
   height: 5vw;
-  width: 20vw;
-  margin-left: 35%;
-  margin-top: 2vmin;
+  width: 25vw;
+  margin-left: 30%;
+  margin-top: 5vmin;
   font-size: 1.8vw;
   border-radius: 2vw;
   border: none;
@@ -88,39 +101,64 @@ section {
   font-size: 2vw;
 }
 @media (max-width: 770px) {
-  main {
-    margin-top: 10vh;
+  section {
+    margin-top: 10%;
   }
+  nav a {
+    font-size: 2vw;
+  }
+  nav a:first-child {
+    font-size: 2vw;
+  }
+
   .quotes {
-    width: 45vw;
-    height: 60vh;
+    width: 50vw;
+    height: 65vh;
   }
   .hero-img {
-    height: 60vh;
-    width: 60vw;
+    height: 65vh;
+    width: 50vw;
   }
   .qoute-1,
   .quote-2,
   .quote-3 {
-    margin-left: 10px;
+    margin-left: auto;
+    width: 90%;
   }
   .qoute-1 {
-    margin-top: 20%;
+    margin-top: auto;
   }
   .quote-3 {
     font-size: 2.5vw;
   }
   .book-now {
-    margin-left: 20%;
-    height: 6vh;
+    margin-left: 30%;
+    height: 8vh;
     width: 25vw;
     font-size: 2vw;
   }
   .book-now:active {
-    font-size: 2.2vw;
+    font-size: 2.1vw;
   }
 }
 @media (max-width: 430px) {
+  section{
+    margin-top: 0;
+  }
+  .side-link{
+    font-size: 4vw;
+    margin-top: 10%;
+    width: 100%;
+  }
+ 
+  nav a:first-child{
+    width: 30vw;
+    font-size: 3.5vw;
+  }
+ .username{
+    font-size: 3.5vw;
+    width: 15vw;
+  }
   main {
     flex-direction: column;
     margin-top: 0;
@@ -128,38 +166,83 @@ section {
   .hero-img {
     background-size: contain;
     width: 100%;
-    height: 50vh;
-    background-position: right;
+    height: 40vh;
+    background-position: center;
   }
   .quotes {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
+    align-content: center;
+
   }
   .qoute-1 {
-    width: 65vw;
-    font-size: 7vw;
-    margin-top: 10%;
+    width: 70vw;
+    font-size: 7.06vw;
+    margin-left: 10%;
+
   }
   .quote-2 {
-    width: 65vw;
+
+    width: 70vw;
     font-size: 7vw;
+    margin-left: 10%;
+
   }
   .quote-3 {
-    width: 65vw;
+
+    width: 70vw;
     font-size: 3.1vw;
+    margin-left: 10%;
+
   }
   .book-now {
-    height: 5vh;
+    height: 8vh;
     width: 40vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    margin-left: 20%;
+
   }
   .book-now:active {
-    font-size: 3.2vw;
+    font-size: 3.6vw;
   }
   .links {
     display: none;
   }
   .nav-link li {
     font-size: 3vw;
+  }
+  .menu-button,
+  .close-button {
+    display: block;
+    padding: 20px;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 250px;
+    z-index: 10;
+    transition: 750ms ease-in-out;
+  }
+
+  .close-button {
+    margin-left: auto;
+  }
+  #side-check:checked ~ .sidebar {
+    right: 0;
+  }
+  #side-check:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
   }
 }

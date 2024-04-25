@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laundry Wallah</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <nav>
-      <ul class="nav-link">
-        <li class="logo"></li>
-        <li class="links">Home</li>
-        <li class="links">Services</li>
-        <li class="links">About Us</li>
-        <li class="links">Contact Us</li>
-        <li class="user-name">Username</li>
-      </ul>
-    </nav>
+      <a href="#">Laundry Wallah</a>
+      <input type="checkbox" id="side-check">
+      
+      <label for="side-check" id="overlay"></label>
+
+      <div class="sidebar">
+          <label for="side-check" class="close-button"><span class="material-symbols-outlined">Close</span></label>
+
+          <a href="#" class="side-link">Home</a>
+          <a href="#" class="side-link">About us</a>
+          <a href="#" class="side-link">Services</a>
+          <a href="#" class="side-link">Contact</a>
+      </div>
+      <a href="#" class="username">Login</a>
+      <label for="side-check" class="menu-button"><span class="material-symbols-outlined">menu</span></label>
+
+  </nav>
+  
     <main>
       <section class="quotes">
         <p class="qoute-1">Revitalize Your Clothes with Expert</p>
@@ -28,12 +41,8 @@
           clothes today!
         </p>
         <button class="book-now">Book a service today!</button>
-
       </section>
-      <section class="hero-img">
-
-      </section>
+      <section class="hero-img"></section>
     </main>
-    
   </body>
 </html>
