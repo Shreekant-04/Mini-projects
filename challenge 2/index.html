@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <h1>Login</h1>
+        <label for="" class="email">Email</label>
+        <input type="email" name="" class="mail" />
+        <label class="password">Password</label>
+        <label class="password-label">
+          <input type="password" class="pass-word" />
+          <span class="material-symbols-outlined eye"> visibility_off</span>
+        </label>
+
+        <button>Login</button>
+        <label for="" class="registernow">
+          New User ? <a href="#" class="register">Register</a>
+        </label>
+      </fieldset>
+    </form>
+  </body>
+  <script>
+    let eye=document.querySelector(".eye")
+    eye.addEventListener("click", () => {
+      var x = document.querySelector(".password-label input");
+      if (x.type === "password") {
+        x.type = "text";
+        eye.innerText="visibility"
+      } else {
+        x.type = "password";
+        eye.innerText="visibility_off"
+      }
+    });
+  </script>
+</html>
