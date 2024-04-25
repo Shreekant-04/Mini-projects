@@ -98,6 +98,10 @@ section {
   border-radius: 2vw;
   border: none;
   cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+.book-now:hover {
+  transform: rotate3d(1, 2, 3, -8deg) scale(1.2, 1.3);
 }
 .book-now:active {
   font-size: 2vw;
@@ -152,10 +156,9 @@ section {
     margin-top: 10%;
     width: 100%;
   }
-
   nav a:first-child {
-    width: 30vw;
-    font-size: 3.5vw;
+    width: 50vw;
+    font-size: 4.7vw;
   }
   .username {
     font-size: 3.5vw;
@@ -200,16 +203,15 @@ section {
   .book-now:active {
     font-size: 3.6vw;
   }
-  .links {
-    display: none;
-  }
-  .nav-link li {
-    font-size: 3vw;
-  }
   .menu-button,
   .close-button {
     display: block;
     padding: 20px;
+  }
+  .side-link {
+    font-size: 5vw;
+    margin-top: 10%;
+    width: 100%;
   }
   .sidebar {
     position: fixed;
