@@ -67,6 +67,7 @@ section {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+  margin-top: 5%;
 }
 .qoute-1 {
   width: 38vw;
@@ -123,7 +124,7 @@ section {
   .quote-2,
   .quote-3 {
     margin-left: auto;
-    width: 90%;
+    width: 40vw;
   }
   .qoute-1 {
     margin-top: auto;
