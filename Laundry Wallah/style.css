@@ -76,20 +76,20 @@ section {
   cursor: pointer;
 }
 .hero-img:hover {
-  animation: orbit 1.5s linear infinite;
+  animation: orbit 1.5s linear infinite ;
 }
 @keyframes orbit {
-  0% {
+  0%,100% {
     transform: rotate(0deg) translateY(10px) rotate(0deg);
   }
 
-  80% {
+  70% {
     transform: rotate(360deg) translateY(10px) rotate(-360deg);
   }
-  85% {
-    transform: scaleX(0.9) scaleY(1.1);
+  80% {
+    transform: scaleX(0.8) scaleY(1.1);
   }
-  100% {
+  90% {
     transform: scaleX(1) scaleY(1);
   }
 }
