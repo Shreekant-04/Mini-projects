@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 body {
   height: 100vh;
@@ -14,7 +14,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2vw;
+  font-size: 1.6vw;
 }
 .sidebar {
   display: flex;
@@ -36,7 +36,7 @@ nav a:first-child {
   margin-right: auto;
   font-weight: 700;
   font-style: oblique;
-  font-size: 1.2vw;
+  font-size: 1.6vw;
   font-family: cursive;
 }
 .username {
@@ -62,38 +62,64 @@ section {
   width: 50vw;
   height: 100%;
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero-img {
-  height: 85%;
+  height: 90%;
+  width: 90%;
   background-image: url(heroimg.png);
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  margin-top: 5%;
+  cursor: pointer;
 }
+.hero-img:hover {
+  animation: orbit 1.5s linear infinite;
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateY(10px) rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(360deg) translateY(10px) rotate(-360deg);
+  }
+  85% {
+    transform: scaleX(0.9) scaleY(1.1);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
 .qoute-1 {
   width: 38vw;
   font-size: 4vw;
-  margin-left: 18%;
   margin-top: 15vmin;
 }
 .quote-2 {
-  width: 40vw;
+  width: 38vw;
   font-size: 4vw;
-  margin-left: 18%;
   color: rgba(0, 132, 255, 0.925);
 }
 .quote-3 {
-  margin-left: 18%;
-  width: 40vw;
+  width: 38vw;
   font-size: 1.6vw;
+}
+.quotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .book-now {
   background-color: rgba(0, 132, 255, 0.925);
   color: #fff;
-  height: 5vw;
-  width: 25vw;
-  margin-left: 30%;
-  margin-top: 5vmin;
+  height: 8vh;
+  width: 22vw;
+  margin-top: 3%;
   font-size: 1.8vw;
   border-radius: 2vw;
   border: none;
@@ -101,14 +127,15 @@ section {
   transition: 0.7s ease-in-out;
 }
 .book-now:hover {
-  transform: rotate3d(1, 2, 3, -8deg) scale(1.2, 1.3);
+  transform: rotate(-8deg) scale(1.2, 1.6);
 }
+
 .book-now:active {
   font-size: 2vw;
 }
 @media (max-width: 770px) {
   section {
-    margin-top: 5%;
+    margin-top: 10%;
   }
   nav a {
     font-size: 2vw;
@@ -119,27 +146,30 @@ section {
 
   .quotes {
     width: 50vw;
-    height: 40vh;
+    height: 65vh;
   }
-  .hero-img {
-    height: 40vh;
+  .hero {
+    height: 65vh;
     width: 50vw;
   }
   .qoute-1,
   .quote-2,
   .quote-3 {
     margin-left: auto;
-    width: 40vw;
+    width: 95%;
   }
   .qoute-1 {
     margin-top: auto;
+    font-size: 5vw;
+  }
+  .quote-2 {
+    font-size: 5vw;
   }
   .quote-3 {
     font-size: 2.5vw;
   }
   .book-now {
-    margin-left: 30%;
-    height: 7vh;
+    height: 8vh;
     width: 25vw;
     font-size: 2vw;
   }
@@ -156,9 +186,10 @@ section {
     margin-top: 10%;
     width: 100%;
   }
+
   nav a:first-child {
-    width: 50vw;
-    font-size: 4.7vw;
+    width: 30vw;
+    font-size: 3.5vw;
   }
   .username {
     font-size: 3.5vw;
@@ -168,50 +199,55 @@ section {
     flex-direction: column;
     margin-top: 0;
   }
-  .hero-img {
+  .hero {
+    background-size: contain;
     width: 100%;
-    height: 55vh;
-    background-position: top;
-    margin-top: 0;
+    height: 60vh;
+    background-position: center;
   }
   .quotes {
     width: 100%;
-    height: 45vh;
-    align-content: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .qoute-1,
+  .quote-2,
+  .quote-3 {
+    margin-left: 5%;
+    width: 80%;
   }
   .qoute-1 {
-    width: 70vw;
-    font-size: 7.06vw;
-    margin-left: 10%;
+    font-size: 8.5vw;
+    margin-top: 5%;
   }
   .quote-2 {
-    width: 70vw;
-    font-size: 7vw;
-    margin-left: 10%;
+    font-size: 8vw;
   }
   .quote-3 {
-    width: 70vw;
-    font-size: 3.1vw;
-    margin-left: 10%;
+    font-size: 4.1vw;
   }
   .book-now {
-    height: 6vh;
+    height: 8vh;
     width: 40vw;
     font-size: 3.5vw;
-    margin-left: 20%;
+    align-self: center;
   }
   .book-now:active {
     font-size: 3.6vw;
+  }
+  .links {
+    display: none;
+  }
+  .nav-link li {
+    font-size: 3vw;
   }
   .menu-button,
   .close-button {
     display: block;
     padding: 20px;
-  }
-  .side-link {
-    font-size: 5vw;
-    margin-top: 10%;
-    width: 100%;
   }
   .sidebar {
     position: fixed;
