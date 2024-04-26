@@ -35,9 +35,8 @@ nav a:first-child {
   width: 16vw;
   margin-right: auto;
   font-weight: 700;
-  font-style: oblique;
+  font-style:oblique;
   font-size: 1.6vw;
-  font-family: cursive;
 }
 .username {
   margin-left: auto;
@@ -118,7 +117,7 @@ section {
   background-color: rgba(0, 132, 255, 0.925);
   color: #fff;
   height: 8vh;
-  width: 22vw;
+  width: 20vw;
   margin-top: 3%;
   font-size: 1.8vw;
   border-radius: 2vw;
@@ -169,8 +168,8 @@ section {
     font-size: 2.5vw;
   }
   .book-now {
-    height: 8vh;
-    width: 25vw;
+    height: 7vh;
+    border-radius: 20px;
     font-size: 2vw;
   }
   .book-now:active {
@@ -188,8 +187,9 @@ section {
   }
 
   nav a:first-child {
-    width: 30vw;
-    font-size: 3.5vw;
+    border: 2px solid green;
+    width: 50vw;
+    font-size: 5vw;
   }
   .username {
     font-size: 3.5vw;
@@ -230,9 +230,10 @@ section {
     font-size: 4.1vw;
   }
   .book-now {
-    height: 8vh;
+    height: 6vh;
     width: 40vw;
     font-size: 3.5vw;
+    border-radius: 20px;
     align-self: center;
   }
   .book-now:active {
