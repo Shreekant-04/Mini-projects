@@ -44,7 +44,7 @@ nav a:first-child {
 }
 
 a:hover {
-  background-color: rgba(0, 0, 255, 0.527);
+  background-color: rgba(0, 0, 255, 0.164);
 }
 .menu-button,
 .close-button {
@@ -187,7 +187,6 @@ section {
   }
 
   nav a:first-child {
-    border: 2px solid green;
     width: 50vw;
     font-size: 5vw;
   }
