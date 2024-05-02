@@ -8,12 +8,12 @@ body {
   width: 100vw;
   display: flex;
   justify-content: flex-start;
-  margin-left: 10%;
   align-items: center;
 }
 div {
   height: 28vmin;
   width: 28vmin;
+  margin-left: 10%;
   border-radius: 50%;
   background-color: #cc0;
   display: flex;
