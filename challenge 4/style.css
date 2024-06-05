@@ -98,7 +98,7 @@ body {
 }
 .top:hover ~ .svg {
   opacity: 1;
-  animation: glow 1s linear 2;
+  animation: glow 1s linear 2 .5s;
 }
 @keyframes glow {
   from,
